@@ -12,9 +12,9 @@ Words are represented as **vectors** in a continuous space, learned from co-occu
 A **language model (LM)** estimates how likely a sequence of words or tokens is.  
 It does this by breaking the sequence into **conditional probabilities**:
 
-\[
+$$
 P(w_1, w_2, ..., w_n) = P(w_1) \cdot P(w_2|w_1) \cdot P(w_3|w_1, w_2) \cdot ... \cdot P(w_n | w_1, ..., w_{n-1})
-\]
+$$
 
 ➡️ *Why it matters:* If a model can assign high probability to real, grammatical, meaningful text — it likely understands something about how language works.
 
@@ -35,9 +35,9 @@ Before training or inference, text is **tokenized**:
 - Split into chunks (tokens), which could be words, subwords, or characters.  
 - Each token is mapped to a unique ID for the model to process.
 
-\[
+$$
 \text{Text} \rightarrow \text{Tokens} \rightarrow \text{Token IDs} \rightarrow \text{Embeddings}
-\]
+$$
 
 ➡️ *Why it matters:* Tokenization defines the granularity of information the model sees, and can introduce bias or loss of meaning (especially across languages/dialects).
 
