@@ -90,7 +90,7 @@ We introduced **HolisticBias** as a benchmark to evaluate completions across soc
 
 ---
 
-## 🔥 Today’s Focus: Transformers & Pretrained Models
+## 🔥 Today’s Focus: Prompting, Classification, and Alignment
 
 ---
 
