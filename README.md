@@ -89,16 +89,22 @@ We introduced **HolisticBias** as a benchmark to evaluate completions across soc
 ➡️ *Why it matters:* Social scientists must understand and **audit model behavior**, especially when applying LMs to people-centered domains.
 
 ---
+### 🧩 Prompt Engineering  
+We learned how to guide model behavior with well-crafted prompts — especially for tasks like classification, sentiment and stance prediction.
+
+### 🧪 Fine-Tuning  
+We explored how to further **train** a model on your own dataset to better match your domain or goals.
+
+
+### 📊 Social Science Applications  
+We saw how models can be used to:  
+- Simulate or emulate human responses  
+- Analyze public opinion
+
 
 ## 🔥 Today’s Focus: Prompting, Classification, and Alignment
 
 ---
-
-### 🧩 Prompt Engineering  
-Learn how to guide model behavior with well-crafted prompts — especially for tasks like classification, sentiment and stance prediction, and using LMs as proxies for studying human behaviour.
-
-### 🧪 Fine-Tuning  
-We’ll explore how to further **train** a model on your own dataset to better match your domain or goals.
 
 ### 🧠 Preference Tuning (Instruction Tuning + RLHF)
 Learn how models are aligned with human values and goals.
@@ -109,23 +115,47 @@ Instruction Tuning – training models to follow natural language instructions
 RLHF – a method for teaching models to prefer responses humans rate as more helpful, safe, or aligned
 These methods are essential for developing assistant-like LMs and understanding how subjective judgments get encoded into model behavior.
 
-### 📊 Social Science Applications  
-Use models to:
-- Simulate or emulate human responses
-- Analyze public opinion
+Here’s the revised version with **Retrieval-Augmented Generation (RAG)** added in, keeping the structure clear and consistent:
 
 ---
 
-## 👀 Coming Up Next
+## 🔥 Today’s Focus: Prompting, Classification, Alignment, and Retrieval-Augmented Generation
 
-Tomorrow, we shift focus to **applying LLMs to tasks**:
+---
 
+### 🧠 Preference Tuning (Instruction Tuning + RLHF)  
 
-### 🧠 Reasoning and Alignment  
+[Notebook Link](https://colab.research.google.com/drive/1ijNbhEaj_f-3Tg3MHuqcdLxXtmy2yj6w?usp=sharing)
+
+Learn how models are aligned with human values and goals.  
+We’ll cover:
+
+- **Instruction Tuning** – training models to follow natural language instructions  
+- **RLHF** – a method for teaching models to prefer responses humans rate as more helpful, safe, or aligned  
+
+These methods are essential for developing assistant-like LMs and understanding how subjective judgments get encoded into model behavior.
+
+---
+
+### 🔍 Retrieval-Augmented Generation (RAG)  
+
+[Notebook Link](https://colab.research.google.com/drive/1AqmADxZYeOtsFNrskiJFuit9w3Dtiil-?usp=sharing)
+
+We’ll look at how combining **retrieval systems** with **LLMs** helps produce more grounded and accurate responses.
+
+- Why LLMs hallucinate without retrieval  
+- How to embed, index, and retrieve documents  
+- How to build and evaluate a simple RAG pipeline  
+
+---
+
+### 🧠 Reasoning  
+
+[Notebook Link](https://colab.research.google.com/drive/1nnm1R7rdIRt1iKvBKFqzKv5HlNelYTul?usp=sharing)
+
 We’ll explore:
 - When models can reason, and why
 - What is reasoning to begin with and where can it be helpful? 
-- How to endow models with tools
 
 ---
 
