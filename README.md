@@ -104,25 +104,6 @@ We saw how models can be used to:
 
 ## 🔥 Today’s Focus: Prompting, Classification, and Alignment
 
----
-
-### 🧠 Preference Tuning (Instruction Tuning + RLHF)
-Learn how models are aligned with human values and goals.
-We’ll cover:
-
-Instruction Tuning – training models to follow natural language instructions
-
-RLHF – a method for teaching models to prefer responses humans rate as more helpful, safe, or aligned
-These methods are essential for developing assistant-like LMs and understanding how subjective judgments get encoded into model behavior.
-
-Here’s the revised version with **Retrieval-Augmented Generation (RAG)** added in, keeping the structure clear and consistent:
-
----
-
-## 🔥 Today’s Focus: Prompting, Classification, Alignment, and Retrieval-Augmented Generation
-
----
-
 ### 🧠 Preference Tuning (Instruction Tuning + RLHF)  
 
 [Notebook Link](https://colab.research.google.com/drive/1ijNbhEaj_f-3Tg3MHuqcdLxXtmy2yj6w?usp=sharing)
