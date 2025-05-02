@@ -50,7 +50,7 @@ This session introduces:
 
 All of these concepts are introduced in the notebook here. To create it, I relied on a selection of an amazing set of educational ressources, which I list below and highly reccomend to you that you read and interact with them: 
 
-### Core ressources 
+### 📚 Core ressources 
 
 - [Language Modelling NLP Course for You](https://lena-voita.github.io/nlp_course/language_modeling.html).
 -[Hugging Face NLP Course (Chapter 6): Byte-Pair Encoding](https://huggingface.co/learn/nlp-course/en/chapter6/5).
@@ -59,7 +59,7 @@ All of these concepts are introduced in the notebook here. To create it, I relie
 - [Illustrated GPT-2](https://jalammar.github.io/illustrated-gpt2/)
 
 
-### Extra ressources 
+### 🧠 Extra ressources 
 - [Perplexity of fixed-length models
 by 🤗](https://huggingface.co/docs/transformers/en/perplexity).
 - [Andrej Karpathy's "Let's Build a GPT Tokenizer" video](https://www.youtube.com/watch?v=zduSFxRajkE).
@@ -68,7 +68,7 @@ by 🤗](https://huggingface.co/docs/transformers/en/perplexity).
 - [LLM Visualisation](https://bbycroft.net/llm)
 - [Transformer Explainer (Polo Club)](https://poloclub.github.io/transformer-explainer/)
 
-### Papers 
+### 📄 Papers 
 
 - ["Attention is all you need" by Vaswani et al., 2017](https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf)
 - ["Neural Machine Translation of Rare Words with Subword Units"
