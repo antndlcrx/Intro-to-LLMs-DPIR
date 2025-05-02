@@ -55,7 +55,8 @@ To create it, I relied on a selection of an amazing set of educational ressource
 ### 📚 Core ressources 
 
 - [Language Modelling NLP Course for You](https://lena-voita.github.io/nlp_course/language_modeling.html).
--[Hugging Face NLP Course (Chapter 6): Byte-Pair Encoding](https://huggingface.co/learn/nlp-course/en/chapter6/5).
+- [Raschka, S. (2024). Build a Large Language Model (From Scratch)](https://learning.oreilly.com/library/view/build-a-large/9781633437166/) 
+- [Hugging Face NLP Course (Chapter 6): Byte-Pair Encoding](https://huggingface.co/learn/nlp-course/en/chapter6/5).
 - [Explore Tokenizers via Tiktokenizer app](https://tiktokenizer.vercel.app/).
 - [The Illustrated Transformer by Jay Alammar](https://jalammar.github.io/illustrated-transformer/)
 - [Illustrated GPT-2](https://jalammar.github.io/illustrated-gpt2/)
