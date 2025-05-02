@@ -67,13 +67,12 @@ To create it, I relied on a selection of an amazing set of educational ressource
 by 🤗](https://huggingface.co/docs/transformers/en/perplexity).
 - [Andrej Karpathy's "Let's Build a GPT Tokenizer" video](https://www.youtube.com/watch?v=zduSFxRajkE).
 - [The Illustrated Transformer by Jay Alammar](https://jalammar.github.io/illustrated-transformer/)
-- [Illustrated GPT-2](https://jalammar.github.io/illustrated-gpt2/)
 - [LLM Visualisation](https://bbycroft.net/llm)
 - [Transformer Explainer (Polo Club)](https://poloclub.github.io/transformer-explainer/)
 
 ### 📄 Papers 
 
-- ["Attention is all you need" by Vaswani et al., 2017](https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf)
+- ["Attention is all you need" by Vaswani et al. (2017)](https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf)
 - ["Neural Machine Translation of Rare Words with Subword Units"
 by Sennrich et al. (2015)](https://arxiv.org/abs/1508.07909)
 
