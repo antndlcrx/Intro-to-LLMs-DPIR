@@ -48,7 +48,9 @@ This session introduces:
 - Model architecture (transformer and attention)
 - How does a language model generate text 
 
-All of these concepts are introduced in the notebook here. To create it, I relied on a selection of an amazing set of educational ressources, which I list below and highly reccomend to you that you read and interact with them: 
+All of these concepts are introduced in [**this notebook**](https://colab.research.google.com/github/antndlcrx/Intro-to-LLMs-DPIR/blob/main/llm_fundamentals.ipynb). 
+
+To create it, I relied on a selection of an amazing set of educational ressources, which I list below and highly reccomend to you that you read and interact with them: 
 
 ### 📚 Core ressources 
 
