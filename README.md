@@ -93,7 +93,7 @@ Particularly, we will work with the following libraries:
 - [`datasets`](https://huggingface.co/docs/datasets): For loading, manipulating, and analyzing NLP datasets at scale. 
 
 
-### Papers
+### 📄 Papers
 
 - ["SentimentisNotStance:Target-AwareOpinion
  Classification for Political Text Analysis" by Bestvater and Monroe (2022)](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/743A9DD62DF3F2F448E199BDD1C37C8D/S1047198722000109a.pdf/sentiment-is-not-stance-target-aware-opinion-classification-for-political-text-analysis.pdf) 
