@@ -37,7 +37,7 @@ Course has four main sessions:
 
 ## 🏛️ LLM Fundamentals 
 
-This is a key session in which you will learn what language models are, how they are build, and how they generate text sequences. When you are intexracting with, say, a chat-bot, there are multiple fascinating concepts and ideas at play (what is a meaning of a word? what is a meaning of a sentence? how do we encode them?), as well as smart and elegant (and at times redundant) algorithms (tokenization, attention, backpropagation, etc.) that put these concepts to life.
+This is a key session in which you will learn what language models are, how they are build, and how they generate text sequences. When you are interacting with, say, a chat-bot, there are multiple fascinating concepts and ideas at play (what is a meaning of a word? what is a meaning of a sentence? how do we encode them?), as well as smart and elegant (and at times redundant) algorithms (tokenization, attention, backpropagation, etc.) that put these concepts to life.
 
 Their particular implementations determine how well a model perfoms, both as a general model of language and as a tool for solving your task. For instance, choosing appropriate way to tokenize text can make or break model's ability to write code. Therefore, having a good understanding of each of the building blocks of an LLM is of great importance. 
 
@@ -76,16 +76,35 @@ by 🤗](https://huggingface.co/docs/transformers/en/perplexity).
 - ["Neural Machine Translation of Rare Words with Subword Units"
 by Sennrich et al. (2015)](https://arxiv.org/abs/1508.07909)
 
+## ✍️ Prompting, Classification, LLM Bias
+
+In this session, we will talk about different ways to do classification (text annotation), which is arguably the most common social-science use case for LLMs. 
+We will play with two different approaches to classification: fine-tuning (where we change model parameters to perform our specific task), and in-context learning, where we give model instructions (prompts) to perform our tasks, without touching any model parameters. 
+
+[Classification Notebook](https://colab.research.google.com/drive/1cjm1nVQo6xa5KlJKJbiHUDwl-XsGtR71?usp=sharing).
+
+We further address model bias, where it comes from, how to detect it, and which strategies we can use to mitigate it. 
+
+[Bias Notebook](https://colab.research.google.com/drive/1ijNbhEaj_f-3Tg3MHuqcdLxXtmy2yj6w?usp=sharing).
+
+We will introduce the key set of tools, which is the 🤗 [Hugging Face Ecosystem](https://huggingface.co/).
+Particularly, we will work with the following libraries: 
+- [`transformers`](https://github.com/huggingface/transformers): For accessing and running pretrained models like GPT-2, BERT, and more.  
+- [`datasets`](https://huggingface.co/docs/datasets): For loading, manipulating, and analyzing NLP datasets at scale. 
+
+
+### Papers
+
+- ["SentimentisNotStance:Target-AwareOpinion
+ Classification for Political Text Analysis" by Bestvater and Monroe (2022)](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/743A9DD62DF3F2F448E199BDD1C37C8D/S1047198722000109a.pdf/sentiment-is-not-stance-target-aware-opinion-classification-for-political-text-analysis.pdf) 
+- ["Bias and Fairness in Large Language Models: A Survey" by Gallegos et al. (2024)](https://aclanthology.org/2024.cl-3.8/)
+- ["From Pretraining Data to Language Models to Downstream Tasks: Tracking the Trails of Political Biases Leading to Unfair NLP Models" by Feng et al. (2023)](https://arxiv.org/pdf/2305.08283.pdf)
+- [""I'm sorry to hear that": Finding New Biases in Language Models with a Holistic Descriptor Dataset" by Smith et al. 2022](https://arxiv.org/abs/2205.09209)
+
 
 ## DPIR Methods Spring School Materials 
 
 ### DPIR Methods Spring School 2025
-
-#### 🤗 Hugging Face Ecosystem  
-
-- [`transformers`](https://github.com/huggingface/transformers): For accessing and running pretrained models like GPT-2, BERT, and more.  
-- [`datasets`](https://huggingface.co/docs/datasets): For loading, manipulating, and analyzing NLP datasets at scale.  
-- [`pipeline`](https://huggingface.co/docs/transformers/main_classes/pipelines): A high-level interface for common tasks like generation, classification, and translation.
 
 #### 🧠 Preference Tuning (Instruction Tuning + RLHF)  
 
