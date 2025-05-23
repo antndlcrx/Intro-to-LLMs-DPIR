@@ -52,7 +52,7 @@ All of these concepts are introduced in [**this notebook**](https://colab.resear
 
 To create it, I relied on a selection of an amazing set of educational ressources, which I list below and highly reccomend to you that you read and interact with them: 
 
-### 📚 Core ressources 
+### 📚 Core resources 
 
 - [Language Modelling NLP Course for You](https://lena-voita.github.io/nlp_course/language_modeling.html).
 - [Raschka, S. (2024). Build a Large Language Model (From Scratch)](https://learning.oreilly.com/library/view/build-a-large/9781633437166/) 
@@ -62,7 +62,7 @@ To create it, I relied on a selection of an amazing set of educational ressource
 - [Illustrated GPT-2](https://jalammar.github.io/illustrated-gpt2/)
 
 
-### 🧠 Extra ressources 
+### 🧠 Extra resources 
 - [Perplexity of fixed-length models
 by 🤗](https://huggingface.co/docs/transformers/en/perplexity).
 - [Andrej Karpathy's "Let's Build a GPT Tokenizer" video](https://www.youtube.com/watch?v=zduSFxRajkE).
@@ -100,6 +100,24 @@ Particularly, we will work with the following libraries:
 - ["Bias and Fairness in Large Language Models: A Survey" by Gallegos et al. (2024)](https://aclanthology.org/2024.cl-3.8/)
 - ["From Pretraining Data to Language Models to Downstream Tasks: Tracking the Trails of Political Biases Leading to Unfair NLP Models" by Feng et al. (2023)](https://arxiv.org/pdf/2305.08283.pdf)
 - [""I'm sorry to hear that": Finding New Biases in Language Models with a Holistic Descriptor Dataset" by Smith et al. 2022](https://arxiv.org/abs/2205.09209)
+
+
+## 🔎 Retrieval-Augmented Generation (RAG) and Evaluation with RAGAS
+
+In this session, we will explore Retrieval-Augmented Generation (RAG), a powerful framework for combining language models with external knowledge sources. We will learn how to build RAG pipelines using the LangChain framework and discuss their applications in research and analysis. The session will also introduce techniques for evaluating RAG outputs using RAGAS, a library that measures key dimensions like answer faithfulness, relevance, and context quality—essential for understanding the reliability of model-generated responses.
+
+[RAG Notebook](https://colab.research.google.com/drive/1AqmADxZYeOtsFNrskiJFuit9w3Dtiil-?usp=sharing).
+
+### 📚 Core resources 
+- [LangChain framework: documentation and tutorials](https://www.langchain.com/)
+- [RAGAS library and tutorials](https://docs.ragas.io/en/stable/)
+
+### 📄 Papers 
+
+- [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401)
+- [RAGAs: Automated Evaluation of Retrieval Augmented Generation](https://aclanthology.org/2024.eacl-demo.16/)
+
+
 
 
 ## DPIR Methods Spring School Materials 
