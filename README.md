@@ -6,6 +6,19 @@ This is a repository with the collection of teaching materials for the (Large) L
 The course introduces LLMs from a social science perspective, focusing on how they work and applying them effectively to real-
 world research tasks. To that end, the course provides both intuitions into key concepts and techniques behind current LLM-based systems (chat-bots, agents), and provides hands-on coding examples and exercises in Python, to help you strengthen your understanding and develop practical skills. 
 
+## 📑 Table of Contents
+
+* [⚠️ Disclaimers](#️-disclaimers)
+* [1. 🏛️ LLM Fundamentals](#1-️-llm-fundamentals)
+* [2. ✍️ Prompting, Classification, LLM Bias](#2-✍️-prompting-classification-llm-bias)
+* [3. 🔎 Retrieval-Augmented Generation (RAG) and Evaluation with RAGAS](#3-🔎-retrieval-augmented-generation-rag-and-evaluation-with-ragas)
+* [📘 DPIR Methods Spring School Materials](#dpir-methods-spring-school-materials)
+
+  * [2025 Spring School](#dpir-methods-spring-school-2025)
+  * [2024 Spring School](#dpir-spring-school-2024)
+
+---
+
 ## ⚠️ Disclaimers: 
 
 ### 🕒 We cover much more than we can fit in 8h total of class time 
@@ -25,15 +38,7 @@ world research tasks. To that end, the course provides both intuitions into key 
 - I am still working on optimising the sequence of sessions, and materials themselves 
 - Your feedback is greatly appreciated! 
 
-## 🔭 Outlook: 
-
-Course has four main sessions: 
-
-1. 🏛️ LLM Fundamentals 
-2. ✍️ Prompting, Classification, LLM Bias
-3. 🧰 Equipping LLMs with tools: RAG and Agents 
-4. 🧩 LLM Reasoning
- 
+--- 
 
 ## 1. 🏛️ LLM Fundamentals 
 
@@ -76,6 +81,8 @@ by 🤗](https://huggingface.co/docs/transformers/en/perplexity).
 - ["Neural Machine Translation of Rare Words with Subword Units"
 by Sennrich et al. (2015)](https://arxiv.org/abs/1508.07909)
 
+---
+
 ## 2. ✍️ Prompting, Classification, LLM Bias
 
 In this session, we will talk about different ways to do classification (text annotation), which is arguably the most common social-science use case for LLMs. 
@@ -101,6 +108,7 @@ Particularly, we will work with the following libraries:
 - ["From Pretraining Data to Language Models to Downstream Tasks: Tracking the Trails of Political Biases Leading to Unfair NLP Models" by Feng et al. (2023)](https://arxiv.org/pdf/2305.08283.pdf)
 - [""I'm sorry to hear that": Finding New Biases in Language Models with a Holistic Descriptor Dataset" by Smith et al. 2022](https://arxiv.org/abs/2205.09209)
 
+---
 
 ## 3. 🔎 Retrieval-Augmented Generation (RAG) and Evaluation with RAGAS
 
@@ -117,8 +125,7 @@ In this session, we will explore Retrieval-Augmented Generation (RAG), a powerfu
 - [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401)
 - [RAGAs: Automated Evaluation of Retrieval Augmented Generation](https://aclanthology.org/2024.eacl-demo.16/)
 
-
-
+---
 
 ## DPIR Methods Spring School Materials 
 
