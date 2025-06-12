@@ -35,7 +35,7 @@ Course has four main sessions:
 4. 🧩 LLM Reasoning
  
 
-## 🏛️ LLM Fundamentals 
+## 1. 🏛️ LLM Fundamentals 
 
 This is a key session in which you will learn what language models are, how they are build, and how they generate text sequences. When you are interacting with, say, a chat-bot, there are multiple fascinating concepts and ideas at play (what is a meaning of a word? what is a meaning of a sentence? how do we encode them?), as well as smart and elegant (and at times redundant) algorithms (tokenization, attention, backpropagation, etc.) that put these concepts to life.
 
@@ -76,7 +76,7 @@ by 🤗](https://huggingface.co/docs/transformers/en/perplexity).
 - ["Neural Machine Translation of Rare Words with Subword Units"
 by Sennrich et al. (2015)](https://arxiv.org/abs/1508.07909)
 
-## ✍️ Prompting, Classification, LLM Bias
+## 2. ✍️ Prompting, Classification, LLM Bias
 
 In this session, we will talk about different ways to do classification (text annotation), which is arguably the most common social-science use case for LLMs. 
 We will play with two different approaches to classification: fine-tuning (where we change model parameters to perform our specific task), and in-context learning, where we give model instructions (prompts) to perform our tasks, without touching any model parameters. 
@@ -102,7 +102,7 @@ Particularly, we will work with the following libraries:
 - [""I'm sorry to hear that": Finding New Biases in Language Models with a Holistic Descriptor Dataset" by Smith et al. 2022](https://arxiv.org/abs/2205.09209)
 
 
-## 🔎 Retrieval-Augmented Generation (RAG) and Evaluation with RAGAS
+## 3. 🔎 Retrieval-Augmented Generation (RAG) and Evaluation with RAGAS
 
 In this session, we will explore Retrieval-Augmented Generation (RAG), a powerful framework for combining language models with external knowledge sources. We will learn how to build RAG pipelines using the LangChain framework and discuss their applications in research and analysis. The session will also introduce techniques for evaluating RAG outputs using RAGAS, a library that measures key dimensions like answer faithfulness, relevance, and context quality—essential for understanding the reliability of model-generated responses.
 
