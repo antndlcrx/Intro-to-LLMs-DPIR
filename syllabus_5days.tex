@@ -1,0 +1,410 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{tcolorbox}
+\usepackage{parskip}
+\usepackage{titling}
+\usepackage{multicol}
+\usepackage{graphicx}
+
+% ── Fonts ──
+\setmainfont{Latin Modern Roman}
+\setsansfont{Latin Modern Sans}
+
+% ── Colors ──
+\definecolor{dark}{HTML}{1A1A2E}
+\definecolor{accent}{HTML}{2E5090}
+\definecolor{accentlight}{HTML}{E8EEF6}
+\definecolor{muted}{HTML}{666666}
+\definecolor{textcol}{HTML}{333333}
+\definecolor{bordercol}{HTML}{D0D5DD}
+
+% ── Hyperlinks ──
+\hypersetup{
+  colorlinks=true,
+  linkcolor=accent,
+  urlcolor=accent,
+  citecolor=accent,
+  pdfauthor={LLMs for Social Science},
+  pdftitle={LLMs for Social Science: Course Syllabus},
+}
+
+% ── Section styling ──
+\titleformat{\section}
+  {\Large\bfseries\sffamily\color{dark}}
+  {}{0em}{}[\vspace{-0.5em}\textcolor{bordercol}{\rule{\textwidth}{0.4pt}}]
+
+\titleformat{\subsection}
+  {\large\bfseries\sffamily\color{accent}}
+  {}{0em}{}
+
+\titleformat{\subsubsection}
+  {\normalsize\bfseries\sffamily\color{dark}}
+  {}{0em}{}
+
+\titlespacing*{\section}{0pt}{1.8em}{0.8em}
+\titlespacing*{\subsection}{0pt}{1.2em}{0.4em}
+\titlespacing*{\subsubsection}{0pt}{0.8em}{0.3em}
+
+% ── Header/footer ──
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\small\textit{\textcolor{muted}{LLMs for Social Science -- Course Syllabus}}}
+\fancyfoot[C]{\small\textcolor{muted}{\thepage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% ── Custom commands ──
+\newcommand{\dayhead}[2]{%
+  \vspace{0.5em}
+  {\Large\sffamily\bfseries\textcolor{dark}{#1}}\par\vspace{-0.2em}
+  {\normalsize\textit{\textcolor{muted}{#2}}}\par
+  \vspace{0.2em}\textcolor{bordercol}{\rule{\textwidth}{0.3pt}}\par
+}
+
+\newcommand{\topichead}[1]{%
+  \vspace{0.8em}{\large\sffamily\bfseries\textcolor{accent}{#1}}\par\vspace{0.3em}
+}
+
+\newcommand{\seclabel}[1]{%
+  \vspace{0.5em}{\normalsize\sffamily\bfseries\textcolor{accent}{#1}}\par\vspace{0.2em}
+}
+
+\newcommand{\refpaper}[1]{%
+  \par\hangindent=1em\hangafter=1\noindent\textcolor{accent}{\small$\bullet$}~{\small #1}\par
+}
+
+\newcommand{\resource}[1]{%
+  \par\hangindent=1.5em\hangafter=1\noindent\hspace{0.5em}{\small\textcolor{accent}{\guilsinglright}}~{\small #1}\par
+}
+
+% ── Body color ──
+\color{textcol}
+
+\begin{document}
+
+% ════════════════════════════════
+% PAGE 1: HEADER + TITLE + CONTENT
+% ════════════════════════════════
+\thispagestyle{empty}
+
+\noindent\includegraphics[width=0.38\textwidth]{oss_header.png}
+
+\vspace{0.8em}
+
+\begin{center}
+  {\LARGE\sffamily\bfseries\textcolor{dark}{LLMs FOR SOCIAL SCIENCE}}\\[0.2em]
+  {\normalsize\sffamily\textcolor{accent}{From foundations to frontier methods}}\\[0.2em]
+  \textcolor{bordercol}{\rule{0.5\textwidth}{1pt}}
+\end{center}
+
+\vspace{0.2em}
+
+\section*{Course Overview}
+{\small This workshop provides social scientists with a deep, practical understanding of large language models, from the fundamentals of how they encode and process language, through to cutting-edge research applications. Each day combines conceptual depth with hands-on exercises, building skills progressively.}
+
+\section*{Prerequisites}
+{\small Participants should be able to read and write Python code at a beginner to intermediate level (desirable). A Google account is required for Google Colab, which we will use for hands-on exercises.}
+
+\section*{Course Convenor}
+{\small\textbf{Maksim Zubok} \textcolor{muted}{$\cdot$ maksim.zubok@nuffield.ox.ac.uk $\cdot$ Nuffield College, University of Oxford}\\
+DPhil student in political methodology, researching the use of language models for data annotation and modeling of public opinion.}
+
+\section*{Schedule}
+
+{\small\sffamily
+\textbf{\textcolor{accent}{Day 1:} \textcolor{dark}{Foundations}} -- From Embeddings to Transformers
+
+\textbf{\textcolor{accent}{Day 2:} \textcolor{dark}{From Models to Tools}} -- Post-Training $\cdot$ Prompting \& Reasoning $\cdot$ Evaluating Models
+
+\textbf{\textcolor{accent}{Day 3:} \textcolor{dark}{Deploying for Research}} -- Fine-Tuning \& Deployment $\cdot$ Text Classification \& Validation
+
+\textbf{\textcolor{accent}{Day 4:} \textcolor{dark}{Social Science Applications}} -- Information Extraction \& RAG $\cdot$ LLMs as Simulated Agents
+
+\textbf{\textcolor{accent}{Day 5:} \textcolor{dark}{Agentic Workflows}} -- Agents \& Autonomous Workflows $\cdot$ Capstone Project
+}
+
+% ════════════════════════════════════════════════════════════
+% DAY 1
+% ════════════════════════════════════════════════════════════
+\section{DAY 1: FOUNDATIONS}
+{\textit{\textcolor{muted}{Understanding the architecture, training, and mechanics that make modern language models possible.}}}
+
+\vspace{1em}
+
+\topichead{From Embeddings to Transformers}
+
+\seclabel{Core Concepts}
+
+Word embeddings and distributional semantics: how meaning emerges from context, vector spaces and the geometry of meaning. Tokenization (BPE, WordPiece) and how models actually see text; why tokenization choices determine model capabilities. Language modeling as next-token prediction: the surprisingly powerful core paradigm. The Transformer: self-attention as the breakthrough, multi-head attention, and positional encodings. Scaling laws: the predictable relationship between compute, data, parameters, and performance. Practical implications: context windows, the KV cache, and why API costs scale the way they do.
+
+\seclabel{Core Readings}
+
+\refpaper{Mikolov, T., Chen, K., Corrado, G. \& Dean, J. (2013). \textit{Efficient Estimation of Word Representations in Vector Space.} The foundational Word2Vec paper.}
+
+\refpaper{Vaswani, A. et al. (2017). \textit{Attention Is All You Need.} NeurIPS. The Transformer architecture.}
+
+\refpaper{Radford, A. et al. (2019). \textit{Language Models are Unsupervised Multitask Learners.} OpenAI. GPT-2 and zero-shot emergence.}
+
+\refpaper{Kaplan, J. et al. (2020). \textit{Scaling Laws for Neural Language Models.} Power-law relationships between scale and performance.}
+
+\seclabel{Further Resources}
+
+\resource{\href{https://jalammar.github.io/illustrated-transformer/}{Jay Alammar: ``The Illustrated Transformer''}; the canonical visual walkthrough}
+
+\resource{\href{https://www.youtube.com/watch?v=eMlx5fFNoYc}{3Blue1Brown: ``Attention in Transformers, visually explained''}; intuitive geometric explanation}
+
+\resource{\href{https://bbycroft.net/llm}{Brendan Bycroft's LLM Visualization}; interactive 3D transformer walkthrough}
+
+\resource{\href{https://huggingface.co/spaces/Xenova/the-tokenizer-playground}{Hugging Face Tokenizer Playground}; compare how different tokenizers split text}
+
+\seclabel{Social Science Applications}
+
+\refpaper{Caliskan, A., Bryson, J. J. \& Narayanan, A. (2017). \textit{Semantics derived automatically from language corpora contain human-like biases.} Science. Word embeddings reflect cultural biases.}
+
+\refpaper{Kozlowski, A. C., Taddy, M. \& Evans, J. A. (2019). \textit{The Geometry of Culture.} ASR. Vector space geometry for mapping cultural dimensions.}
+
+
+% ════════════════════════════════════════════════════════════
+% DAY 2
+% ════════════════════════════════════════════════════════════
+\section{DAY 2: FROM MODELS TO TOOLS}
+{\textit{\textcolor{muted}{How raw language models become useful assistants, and the skills needed to work with them effectively.}}}
+
+\vspace{1em}
+
+\topichead{Post-Training: Making Models Useful}
+
+\seclabel{Core Concepts}
+
+The base model $\rightarrow$ assistant pipeline: why raw pre-trained models are ``weird'' and how post-training fixes this. Supervised Fine-Tuning (SFT) on instruction-response pairs. Reinforcement Learning from Human Feedback (RLHF): reward modeling and PPO. Direct Preference Optimization (DPO) as a simpler alternative. Constitutional AI and safety training. What post-training changes and what it doesn't (capabilities vs.\ tendencies).
+
+\seclabel{Core Readings}
+
+\refpaper{Ouyang, L. et al. (2022). \textit{Training language models to follow instructions with human feedback.} NeurIPS. The InstructGPT/RLHF paper.}
+
+\refpaper{Rafailov, R. et al. (2023). \textit{Direct Preference Optimization: Your Language Model is Secretly a Reward Model.} NeurIPS.}
+
+\seclabel{Further Resources}
+
+\resource{\href{https://huyenchip.com/2023/05/02/rlhf.html}{Chip Huyen: ``RLHF: Reinforcement Learning from Human Feedback''}; accessible technical overview}
+
+\vspace{1em}
+
+\topichead{Prompting \& Reasoning}
+
+\seclabel{Core Concepts}
+
+Prompting as the primary interface for working with LLMs. System prompts and their role in shaping behavior. Zero-shot vs.\ few-shot prompting; when examples matter. Structured outputs (JSON, XML) and why format matters. Temperature and sampling parameters. Prompt sensitivity and reproducibility. Chain-of-thought prompting: why ``showing work'' improves performance. Reasoning models (o1/o3, DeepSeek-R1, Claude extended thinking) and when to use them.
+
+\seclabel{Core Readings}
+
+\refpaper{Brown, T. et al. (2020). \textit{Language Models are Few-Shot Learners.} NeurIPS. GPT-3; in-context learning.}
+
+\refpaper{Wei, J. et al. (2022). \textit{Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.} NeurIPS.}
+
+\seclabel{Further Resources}
+
+\resource{\href{https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview}{Anthropic Prompt Engineering Guide}; practical, regularly updated}
+
+\resource{\href{https://docs.anthropic.com/en/docs/build-with-claude/extended-thinking}{Anthropic: Extended thinking documentation}; using Claude's reasoning mode}
+
+\vspace{1em}
+
+\topichead{Evaluating \& Choosing Models}
+
+\seclabel{Core Concepts}
+
+The benchmark landscape: MMLU (broad knowledge), HumanEval (code), GPQA (expert reasoning), Chatbot Arena (human preference). What benchmarks capture and miss: contamination, gaming, construct validity. Open vs.\ closed models: tradeoffs in capability, cost, transparency, privacy. Building task-specific evaluations for your research.
+
+\seclabel{Core Readings}
+
+\refpaper{Hendrycks, D. et al. (2021). \textit{Measuring Massive Multitask Language Understanding.} ICLR. The MMLU benchmark.}
+
+\refpaper{Chiang, W.-L. et al. (2024). \textit{Chatbot Arena: An Open Platform for Evaluating LLMs through Human Preference.}}
+
+\seclabel{Further Resources}
+
+\resource{\href{https://huggingface.co/spaces/lmarena-ai/chatbot-arena}{Chatbot Arena Leaderboard}; \href{https://artificialanalysis.ai}{Artificial Analysis}; live model rankings and cost comparisons}
+
+
+% ════════════════════════════════════════════════════════════
+% DAY 3
+% ════════════════════════════════════════════════════════════
+\section{DAY 3: DEPLOYING FOR RESEARCH}
+{\textit{\textcolor{muted}{The practical infrastructure for adapting and running models, and your first research application.}}}
+
+\vspace{1em}
+
+\topichead{Fine-Tuning \& Deployment}
+
+\seclabel{Core Concepts}
+
+The decision framework: when to prompt-engineer vs.\ RAG vs.\ fine-tune. BERT-family models for classification—still the workhorse for many annotation tasks. Parameter-efficient fine-tuning (LoRA, QLoRA): dramatically reduced compute needs. SFT for custom instruction-following. Data requirements, compute costs, overfitting. The API transition: from interactive chat to programmatic access. Structured outputs, batching, and async patterns for large corpora. Cost estimation and rate limits. Self-hosted inference with vLLM/SGLang when privacy or scale demands it.
+
+\seclabel{Core Readings}
+
+\refpaper{Devlin, J. et al. (2019). \textit{BERT: Pre-training of Deep Bidirectional Transformers.} NAACL. The encoder model for classification.}
+
+\refpaper{Hu, E. et al. (2021). \textit{LoRA: Low-Rank Adaptation of Large Language Models.} ICLR. Efficient fine-tuning.}
+
+\refpaper{Kwon, W. et al. (2023). \textit{Efficient Memory Management for Large Language Model Serving with PagedAttention.} SOSP. vLLM.}
+
+\seclabel{Further Resources}
+
+\resource{\href{https://github.com/huggingface/peft}{Hugging Face PEFT library}; LoRA, QLoRA, and other efficient methods}
+
+\resource{\href{https://docs.anthropic.com}{Anthropic API documentation}; \href{https://cookbook.openai.com}{OpenAI Cookbook}; structured outputs, batching}
+
+\vspace{1em}
+
+\topichead{Text Classification \& Validation}
+
+\seclabel{Core Concepts}
+
+Zero-shot and few-shot classification with LLMs. Building labeling pipelines: prompt design, output parsing, error handling. The critical question: validation. Inter-annotator agreement metrics (Cohen's $\kappa$, Krippendorff's $\alpha$) applied to LLM-human comparison. Systematic biases: positional bias, verbosity bias, cultural and political biases. Building gold-standard validation sets. Confidence calibration and uncertainty quantification.
+
+\seclabel{Core Readings}
+
+\refpaper{Gilardi, F., Alizadeh, M. \& Haunss, S. (2023). \textit{ChatGPT Outperforms Crowd-Workers for Text-Annotation Tasks.} PNAS.}
+
+\refpaper{Pangakis, N., Wolken, S. \& Fasching, N. (2023). \textit{Automated Annotation with Generative AI Requires Validation.}}
+
+\seclabel{Further Resources}
+
+\resource{Krippendorff, K. (2019) \textit{Content Analysis}; foundational annotation methodology}
+
+\resource{Scikit-learn \href{https://scikit-learn.org/stable/modules/model_evaluation.html}{classification metrics}; \href{https://prodi.gy}{Prodigy} annotation tool}
+
+\seclabel{Social Science Application}
+
+\refpaper{Ornstein, J., et al. (2023). \textit{How to Train Your Stochastic Parrot: Large Language Models for Political Texts.} Building annotation pipelines at scale.}
+
+
+% ════════════════════════════════════════════════════════════
+% DAY 4
+% ════════════════════════════════════════════════════════════
+\section{DAY 4: SOCIAL SCIENCE APPLICATIONS}
+{\textit{\textcolor{muted}{Applying LLMs to core research tasks, with rigorous attention to validation and methodology.}}}
+
+\vspace{1em}
+
+\topichead{Information Extraction, Summarization \& RAG}
+
+\seclabel{Core Concepts}
+
+Extracting structured information from unstructured text: entities, relationships, events, arguments. Summarization strategies and failure modes (hallucination, omission, distortion). Retrieval-Augmented Generation (RAG): using embeddings for semantic retrieval. Chunking strategies for effective retrieval. The RAG pipeline: embed $\rightarrow$ index $\rightarrow$ retrieve $\rightarrow$ generate. Working with large document corpora: legal texts, parliamentary records, news archives. Evaluation: measuring extraction and summarization quality.
+
+\seclabel{Core Readings}
+
+\refpaper{Lewis, P. et al. (2020). \textit{Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.} NeurIPS. The foundational RAG paper.}
+
+\refpaper{Gao, Y. et al. (2024). \textit{Retrieval-Augmented Generation for Large Language Models: A Survey.} Comprehensive RAG overview.}
+
+\seclabel{Further Resources}
+
+\resource{\href{https://python.langchain.com}{LangChain}; \href{https://www.llamaindex.ai}{LlamaIndex}; RAG pipeline frameworks}
+
+\resource{ChromaDB, FAISS, Pinecone; vector database options}
+
+\resource{Anthropic: \href{https://www.anthropic.com/news/contextual-retrieval}{``Contextual Retrieval''} (2024); improved chunking for RAG}
+
+\vspace{1em}
+
+\topichead{LLMs as Simulated Agents for Social Science}
+
+\seclabel{Core Concepts}
+
+The Homo silicus paradigm: using LLMs to simulate human survey responses, decision-making, and behavior. Prompt design as experimental design: persona construction, demographic conditioning, scenario framing. Silicon sampling: when do LLM simulations track actual human distributions? Known biases: WEIRD bias, sycophancy, anchoring, refusal patterns. Validity framework: construct, external, and ecological validity. When simulation works, when it doesn't, and how to tell.
+
+\seclabel{Core Readings}
+
+\refpaper{Argyle, L. et al. (2023). \textit{Out of One, Many: Using Language Models to Simulate Human Samples.} Political Analysis.}
+
+\refpaper{Horton, J. (2023). \textit{Large Language Models as Simulated Economic Agents.} NBER Working Paper.}
+
+\refpaper{Bisbee, J. et al. (2024). \textit{Synthetic Replacements for Human Survey Data? The Perils of Large Language Models.} Political Analysis.}
+
+\seclabel{Further Resources}
+
+\resource{Park, J.S. et al. (2023). \textit{Generative Agents: Interactive Simulacra of Human Behavior.} UIST.}
+
+\resource{Aher, G. et al. (2023) ``Using LLMs to Simulate Multiple Humans and Replicate Human Subject Studies''}
+
+
+% ════════════════════════════════════════════════════════════
+% DAY 5
+% ════════════════════════════════════════════════════════════
+\section{DAY 5: AGENTIC WORKFLOWS}
+{\textit{\textcolor{muted}{Building autonomous research assistants and AI-augmented workflows.}}}
+
+\vspace{1em}
+
+\topichead{Agents \& Autonomous Workflows}
+
+\seclabel{Core Concepts}
+
+What agents are architecturally: tool use, planning loops, memory, and self-correction. The ReAct paradigm: reasoning + acting. \href{https://docs.anthropic.com/en/docs/claude-code}{Claude Code} for code generation and project development. Agents for literature review: searching, summarizing, synthesizing. Hypothesis refinement and experimental design assistance. \href{https://modelcontextprotocol.io}{MCP} (Model Context Protocol) and tool ecosystems. Environment setup: terminal basics, local vs.\ cloud (\href{https://github.com/features/codespaces}{GitHub Codespaces} as an accessible option).
+
+\seclabel{Core Readings}
+
+\refpaper{Yao, S. et al. (2023). \textit{ReAct: Synergizing Reasoning and Acting in Language Models.} ICLR. The foundational agent framework.}
+
+\refpaper{Schick, T. et al. (2023). \textit{Toolformer: Language Models Can Learn to Use Tools.} NeurIPS.}
+
+\refpaper{Anthropic (2024). \textit{Model Context Protocol (MCP) Specification.} Open standard for AI-tool connections.}
+
+\seclabel{Further Resources}
+
+\resource{\href{https://docs.anthropic.com/en/docs/claude-code}{Claude Code documentation}; setup, usage, and best practices}
+
+\resource{\href{https://github.com/features/codespaces}{GitHub Codespaces}; browser-based dev environments (no local setup)}
+
+\resource{\href{https://langchain-ai.github.io/langgraph/}{LangGraph}; framework for building stateful agents}
+
+\resource{\href{https://elicit.com}{Elicit}, \href{https://www.semanticscholar.org}{Semantic Scholar}; AI-powered research tools}
+
+\vspace{1.5em}
+
+
+
+
+% ════════════════════════════════════════════════════════════
+% APPENDIX
+% ════════════════════════════════════════════════════════════
+\section{APPENDIX: RECOMMENDED TOOLS \& PLATFORMS}
+
+\subsection{Development \& Notebooks}
+
+\resource{\href{https://colab.research.google.com}{Google Colab}; primary platform for exercises, free GPU access}
+\resource{\href{https://github.com/features/codespaces}{GitHub Codespaces}; cloud development environment for agent workflows}
+\resource{VS Code + Python extensions; local development alternative}
+
+\subsection{LLM APIs \& Providers}
+
+\resource{\href{https://docs.anthropic.com}{Anthropic API} (Claude models)}
+\resource{\href{https://platform.openai.com}{OpenAI API} (GPT and o-series models)}
+\resource{\href{https://aistudio.google.com}{Google AI Studio} (Gemini models)}
+\resource{Together AI, Fireworks AI, \href{https://groq.com}{Groq}; open model inference providers}
+
+\subsection{Key Python Libraries}
+
+\resource{\href{https://huggingface.co/docs/transformers}{transformers} (Hugging Face); model loading, tokenization, fine-tuning}
+\resource{\href{https://www.sbert.net}{sentence-transformers}; embedding models for semantic similarity and RAG}
+\resource{\href{https://scikit-learn.org}{scikit-learn}; evaluation metrics, classification baselines}
+\resource{\href{https://github.com/huggingface/peft}{peft}; parameter-efficient fine-tuning (LoRA, QLoRA)}
+\resource{\href{https://python.langchain.com}{langchain} / \href{https://www.llamaindex.ai}{llamaindex}; RAG pipeline construction}
+
+\subsection{Research \& Literature Tools}
+
+\resource{\href{https://www.semanticscholar.org}{Semantic Scholar}; AI-powered academic search}
+\resource{\href{https://elicit.com}{Elicit}; AI research assistant for literature review}
+\resource{\href{https://www.connectedpapers.com}{Connected Papers}; visual exploration of citation networks}
+
+\end{document}
