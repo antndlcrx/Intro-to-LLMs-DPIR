@@ -1,12 +1,13 @@
-<p align="center">
-  <img src="images/dpir_oss.png" alt="LLMs for Social Science (DPIR Oxford)" width="560">
-</p>
+# LLMs for Social Science
 
-# LLMs for Social Science (DPIR)
+**Symposium on Behavioral AI in Education, Work, and Decision-Making**  
+April 8–9, 2026 · ESSCA School of Management · Paris, France
 
-Teaching materials for the **Large Language Models for Social Science** workshop at the Department of Politics and International Relations (DPIR), University of Oxford.
+Teaching materials for the **Large Language Models for Social Science** sessions at this symposium.
 
 This repository gives you a practical path from how language models work internally to deploying them in real research workflows. Each module pairs concepts with hands-on Python notebooks.
+
+<!-- Header image (`images/dpir_oss.png`) omitted for this venue; restore for Oxford / other programmes if needed. -->
 
 ## Course overview
 
