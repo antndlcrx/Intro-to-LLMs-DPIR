@@ -6,11 +6,11 @@
 
 Teaching materials for the **Large Language Models for Social Science** workshop at the Department of Politics and International Relations (DPIR), University of Oxford.
 
-This repository gives you a practical path from how language models work internally to deploying them in real research workflows. Each day pairs concepts with hands-on Python notebooks.
+This repository gives you a practical path from how language models work internally to deploying them in real research workflows. Each module pairs concepts with hands-on Python notebooks.
 
 ## Course overview
 
-The workshop is structured as a five-day progression: foundations of representation and generation; turning raw models into usable tools; deployment and validation for research; social-science applications (including RAG and simulated survey responses); and agent-style workflows.
+The full course is structured as five modules in sequence: foundations of representation and generation; turning raw models into usable tools; deployment and validation for research; social-science applications (including RAG and simulated survey responses); and agent-style workflows. Shorter workshops typically cover a subset of these modules.
 
 The authoritative schedule, core topics, readings, and recommended tools are in the syllabus PDF:
 
@@ -27,13 +27,13 @@ If you need to catch up on basics, see the notebooks under [`preliminaries/`](pr
 
 These exercises are companion notebooks to the course text and visualizations on the official course page: [LLMs for Social Science course](https://llmsforsocialscience.net/course/).
 
-| Day | Theme | Notebook |
+| Module | Theme | Notebook |
 |-----|--------|----------|
-| 1 | Foundations: from embeddings to transformers | [`Day 1 notebook`](course_notebooks/day_1_foundations/day1_embeddings_to_transformers.ipynb) |
-| 2 | From models to tools: post-training, prompting, reasoning, evaluation | [`Day 2 notebook`](course_notebooks/day_2_models_to_tools/day2_from_models_to_tools.ipynb) |
-| 3 | Deploying for research: fine-tuning, APIs, classification and validation | [`Day 3 notebook`](course_notebooks/day_3_deploying_for_research/day3_deploying_for_research.ipynb) |
-| 4 | Social science applications: extraction, RAG, LLMs as simulated agents | [`Day 4 notebook`](course_notebooks/day_4_rag_survey_response_prediciton/day4_social_science_applications.ipynb) |
-| 5 | Agentic workflows: tools, planning, research assistants, capstone | [`Day 5 notebook`](course_notebooks/day_5_agents/day5_agentic_workflows.ipynb) |
+| 1 | Foundations: from embeddings to transformers | [`Module 1 notebook`](course_notebooks/day_1_foundations/day1_embeddings_to_transformers.ipynb) |
+| 2 | From models to tools: post-training, prompting, reasoning, evaluation | [`Module 2 notebook`](course_notebooks/day_2_models_to_tools/day2_from_models_to_tools.ipynb) |
+| 3 | Deploying for research: fine-tuning, APIs, classification and validation | [`Module 3 notebook`](course_notebooks/day_3_deploying_for_research/day3_deploying_for_research.ipynb) |
+| 4 | Social science applications: extraction, RAG, LLMs as simulated agents | [`Module 4 notebook`](course_notebooks/day_4_rag_survey_response_prediciton/day4_social_science_applications.ipynb) |
+| 5 | Agentic workflows: tools, planning, research assistants, capstone | [`Module 5 notebook`](course_notebooks/day_5_agents/day5_agentic_workflows.ipynb) |
 
 Open any `.ipynb` file on GitHub and use **“Open in Colab”** from the notebook menu, or clone this repository and run locally with Jupyter / VS Code or your preferred alternative.
 
