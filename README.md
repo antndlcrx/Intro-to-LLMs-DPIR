@@ -13,9 +13,9 @@ This repository gives you a practical path from how language models work interna
 
 The full course is structured as five modules in sequence: foundations of representation and generation; turning raw models into usable tools; deployment and validation for research; social-science applications (including RAG and simulated survey responses); and agent-style workflows. Shorter workshops typically cover a subset of these modules.
 
-The authoritative schedule, core topics, readings, and recommended tools are in the syllabus PDF:
+The schedule, core topics, readings, and recommended tools for this symposium session are in the syllabus PDF:
 
-- [`syllabus_oss_2025.pdf`](syllabus_oss_2025.pdf)
+- [`Workshop_Tue_7_Maksim_Zubok.pdf`](Workshop_Tue_7_Maksim_Zubok.pdf)
 
 ## Prerequisites
 
