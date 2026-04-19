@@ -1,9 +1,9 @@
 # LLMs for Social Science
 
-**Symposium on Behavioral AI in Education, Work, and Decision-Making**  
-April 8–9, 2026 · ESSCA School of Management · Paris, France
+**Workshop for social sciences**  
+April 20–21, 2026 · European University Institute · Florence, Italy
 
-Teaching materials for the **Large Language Models for Social Science** sessions at this symposium.
+Teaching materials for the **Large Language Models for Social Science** workshop.
 
 This repository gives you a practical path from how language models work internally to deploying them in real research workflows. Each module pairs concepts with hands-on Python notebooks.
 
